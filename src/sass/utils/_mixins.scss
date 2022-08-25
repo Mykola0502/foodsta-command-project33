@@ -14,9 +14,8 @@
   flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }
 
-@mixin fonts($fs, $lh, $ls: 0.03em, $fw: 700) {
+@mixin fonts($fs, $lh, $fw: 700) {
   font-weight: $fw;
   font-size: $fs;
   line-height: decimal-round($lh/$fs);
-  letter-spacing: $ls;
 }
