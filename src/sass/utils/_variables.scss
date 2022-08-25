@@ -1,0 +1,33 @@
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
+
+/* fonts */
+$font-main: 'Roboto', sans-serif;
+
+/* text-colors */
+$color-text-primary: #2c2c2c;
+
+/* bg colors */
+$background-white: #fefefe;
+
+/* other colors */
+$color-black: #000000;
+$color-white: #ffffff;
+$color-accent: #bbf330;
+$color-btn-hover: #b5ff00;
+$color-btn-border: #7eb101;
+$color-btn-border-hover: #597d00;
+$color-yellow: #ffe550;
+$color-form-placeholder: #505050;
+$color-form-error: #ff705d;
+
+/* box shadow */
+$box-shadow-header: 0px 4px 24px rgba(105, 105, 105, 0.1);
+$box-shadow-footer: 0px -4px 24px rgba(105, 105, 105, 0.1);
+$box-shadow-slider: 0px 4px 4px rgba(0, 0, 0, 0.06);
+$box-shadow-slider-click: 0px 4px 4px rgba(0, 0, 0, 0.16);
+
+/* others */
+$timing-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
