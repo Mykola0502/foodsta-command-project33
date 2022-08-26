@@ -25,9 +25,11 @@
     }
 }
 
-
-.menu-btn:focus .menu-btn__svg {
-    fill: currentColor;
+.menu-btn__svg {
+fill: $color-btn-border;
+.menu-btn:hover &,
+.menu-btn:focus & {
+    fill: currentColor;}
 }
 
 // .menu-btn .menu-btn__cross {
@@ -44,17 +46,17 @@
 
 
 .menu-container{
-    // display: none;
+    display: none;
     
 
    
 
-    // 
-    // &.is-open {
-    //     // display: block;
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    
+    &.is-open {
+        // display: block;
+        display: flex;
+        flex-direction: column;
+    }
 
     @media screen and (max-width: 767px) {
         position: absolute;

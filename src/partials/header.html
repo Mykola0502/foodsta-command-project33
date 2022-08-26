@@ -1,12 +1,12 @@
 <header class="header">
 
 <div class="container header-container">
-    <a class="logo header__logo  link" href="./index.html">logo
+    <a class="logo header__logo  link" href="./index.html">
         <svg class="logo__svg" width="66" height="52">
-        <!-- <use  href="./icons.svg#menu"></use> -->
+       <use  href="./images/icons.svg#logo"></use> 
         </svg> 
  </a>
-<div class="menu-container " id="menu-container" data-menu>
+<div class="menu-container " id="menu-container" data-menu >
 <nav class="nav">
     <ul class="list nav__list">
         <li class="nav__item"><a href="" class="nav__link link">Home</a></li>
@@ -19,8 +19,13 @@
 </div>
 <button class="header__btn btn" 
 type="button"> Order Now</button>
+
 <button class="menu-btn " 
-type="button" aria-expanded="false" aria-controls="menu-container">кнопка
+type="button" aria-expanded="false" aria-controls="menu-container" data-menu-open>
+<svg class="menu-btn__svg" width="28" height="28">
+    <use href="./images/icons.svg#menu"></use>
+</svg>
+
     </button>
 
 
