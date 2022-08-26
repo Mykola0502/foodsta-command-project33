@@ -1,0 +1,45 @@
+.header-container {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+position: relative;
+
+}
+
+.header__logo {
+margin-right: auto;
+
+}
+
+.header__btn {
+display: none;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 16px;
+padding-right: 17px;
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+color: $color-text-primary;
+background-color: $color-accent;
+border: none;
+
+&:hover, &:focus {background-color: $color-btn-hover;}
+
+
+@media screen and (min-width: 768px) {
+       display: block;
+    }
+
+}
+
+
+
+/**
+  |============================
+  | NAVIGATION
+  |============================
+*/
+
+
