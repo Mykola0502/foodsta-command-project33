@@ -1,1 +1,42 @@
-<section>Subscribe</section>
+<section class="section subscribe">
+  <div class="container subscribe__container">
+    <div class="subscribe__img">
+      <img
+        srcset="
+          ./images/subscribe/subscribe-img-280.png   280w,
+          ./images/subscribe/subscribe-img-281.png   281w,
+          ./images/subscribe/subscribe-img-560.png   560w,
+          ./images/subscribe/subscribe-img-562.png   562w,
+          ./images/subscribe/subscribe-img-608.png   608w,
+          ./images/subscribe/subscribe-img-1216.png 1216w
+        "
+        sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (max-width: 767.98px) 280px"
+        src="./images/subscribe/subscribe-img-280.png"
+        alt="Banana"
+        width="280"
+        height="78"
+      />
+    </div>
+    <div class="subscribe__description">
+      <h2 class="section__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+
+      <form class="subscription-form" name="subscription">
+        <div class="subscription-form__field">
+          <input
+            class="subscription-form__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <button class="btn subscription-form__btn" type="submit">
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
