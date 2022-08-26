@@ -40,9 +40,9 @@ fill: $color-btn-border;
 //     display: block;
 // }
 
-.menu-btn.is-open .menu-btn__menu {
-    display: none;
-}
+// .menu-btn.is-open .menu-btn__menu {
+//     display: none;
+// }
 
 
 .menu-container{
@@ -58,7 +58,7 @@ fill: $color-btn-border;
         flex-direction: column;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         position: absolute;
         top: 50px;
         right: 20px;
