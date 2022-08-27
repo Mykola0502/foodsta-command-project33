@@ -32,7 +32,7 @@
   }
 }
 
-.menu-btn__cross {
+.menu-btn__close {
     position: absolute;
     top: 4px;
     right: 4px;
@@ -52,7 +52,7 @@
 // }
 
 .menu-container {
-  display: none;
+ 
 
   &.is-open {
     // display: block;
@@ -61,6 +61,7 @@
   }
 
   @media screen and (max-width: 767.98px) {
+    display: none;
     position: absolute;
     top: 50px;
     right: 20px;
