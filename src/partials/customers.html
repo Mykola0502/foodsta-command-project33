@@ -4,7 +4,7 @@
     <p class="customers__uppertitle">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
-    <ul class="customers__list">
+    <ul class="customers__list list">
       <li class="customers__item">
         <svg class="customers__icon" width="85" height="80">
           <use href="./images/icons.svg#Stars"></use>
@@ -14,9 +14,27 @@
           choose from too, I would recommend to a freind, No questions asked”
         </p>
         <div class="">
-          <svg class="" width="48" height="48">
-            <use href="./images/icons.svg#"></use>
-          </svg>
+          <picture>
+            <source
+              srcset="
+                ./images/customers/ellipse9@1x_sm.png  1x,
+                ./images/customers/ellipse9@2x_md.png  2x,
+                ./images/customers/ellipse9@3x_lg.png  3x,
+                ./images/customers/ellipse9@1x_sm.webp 1x,
+                ./images/customers/ellipse9@2x_md.webp 2x,
+                ./images/customers/ellipse9@3x_lg.webp 3x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <img
+              class="logo__img"
+              src="./images/customers/ellipse9@1x_sm.png"
+              alt="Customers logo"
+            />
+          </picture>
+          <h3 customers-title>Sumith Shah</h3>
+          <p class="customers-name">Some Dude</p>
         </div>
       </li>
       <li class="customers__item">
@@ -28,6 +46,30 @@
           amazing, It has been a very pleasant experience ordering from this
           app”
         </p>
+
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/customers/ellipse10@1x_sm.png  1x,
+                ./images/customers/ellipse10@2x_md.png  2x,
+                ./images/customers/ellipse10@3x_lg.png  3x,
+                ./images/customers/ellipse10@1x_sm.webp 1x,
+                ./images/customers/ellipse10@2x_md.webp 2x,
+                ./images/customers/ellipse10@3x_lg.webp 3x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <img
+              class="logo__img"
+              src="./images/customers/ellipse10@1x_sm.png"
+              alt="Customers logo"
+            />
+          </picture>
+          <h3 customers-title>Sumith Shah</h3>
+          <p class="customers-name">Some Dude</p>
+        </div>
       </li>
     </ul>
   </div>
