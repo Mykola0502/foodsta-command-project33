@@ -4,44 +4,63 @@
       <img
         srcset="
           ./images/offerings/apple@1x_sm.png  280w,
-          ./images/offerings/apple@2x_sm.png  560w
+          ./images/offerings/apple@2x_sm.png  560w,
           ./images/offerings/apple@1x_md.png  357w,
           ./images/offerings/apple@2x_md.png  714w,
           ./images/offerings/apple@1x_lg.png  550w,
           ./images/offerings/apple@2x_lg.png 1100w
-          "
+        "
         sizes="(min-width: 1280px) 550px, (min-width: 768px) 357px, 100vw"
         class="offerings_photo"
         src="./images/offerings/apple@1x_sm.png"
         alt="green apple"
         width="280"
-        height="309"
       />
+      <ul class="list hidden-list">
+        <li class="hidden-item">
+          <img
+            class="hidden-apple"
+            src="./images/offerings/apple_md.png"
+            alt="medium green apple"
+          />
+        </li>
+        <li class="hidden-item">
+          <img
+            class="hidden-apple"
+            src="./images/offerings/apple_sm.png"
+            alt="small green apple"
+          />
+        </li>
+      </ul>
     </div>
     <div class="offerings__explanation">
       <h2 class="offerings__title">What’s Special About Our Offerings</h2>
-      <p class="offerings__text">
+      <p class="offerings__text offerings__text-main">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
       <ul class="offerings__explanation-list list">
         <li class="explanation__item">
-          <svg width="48" height="48">
-            <use href="/./src/images/icons.svg#rocket"></use>
-          </svg>
+          <div class="wrap-icon">
+            <svg class="explanation__icon" width="32" height="32">
+              <use href="/./src/images/icons.svg#rocket"></use>
+            </svg>
+          </div>
           <h3 class="explanation__item-title">Fasest Delivery</h3>
-          <p class="explanation__item-text">
+          <p class="explanation__item-text offerings__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros.
           </p>
         </li>
         <li class="explanation__item">
-          <svg width="48" height="48">
-            <use href="/./src/images/icons.svg#touch"></use>
-          </svg>
+          <div class="wrap-icon">
+            <svg class="explanation__icon" width="32" height="32">
+              <use href="/./src/images/icons.svg#touch"></use>
+            </svg>
+          </div>
           <h3 class="explanation__item-title">Easy To Order</h3>
-          <p class="explanation__item-text">
+          <p class="explanation__item-text offerings__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros.
           </p>
@@ -50,7 +69,7 @@
       <button class="explanation__btn btn" type="button">Order Now</button>
       <button class="more__btn bnt" type="button">
         Read More
-        <svg width="13.67" height="13.67">
+        <svg class="more-icon" width="13.67" height="13.67">
           <use href="/./src/images/icons.svg#icon-Chevron-Down"></use>
         </svg>
       </button>
