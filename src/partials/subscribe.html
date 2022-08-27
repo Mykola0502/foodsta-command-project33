@@ -30,8 +30,15 @@
             class="subscription-form__input"
             type="email"
             name="email"
+            required
             placeholder="Enter your email"
           />
+          <span class="subscription-form__error">
+            <svg class="icon-error" width="12" height="12">
+              <use href="./images/icons.svg#error"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
           <button class="btn subscription-form__btn" type="submit">
             Subscribe
           </button>

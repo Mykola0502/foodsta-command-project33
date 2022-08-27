@@ -35,5 +35,9 @@
     <symbol id="cross" viewBox="0 0 30 32">
       <path d="m16.219 14.826 4.928-4.924a1.012 1.012 0 0 0-1.43-1.428l-4.928 4.873-4.958-4.954a1.013 1.013 0 0 0-1.43 1.428l4.948 5.005-4.846 4.782a1.002 1.002 0 0 0-.284 1.139 1.014 1.014 0 0 0 1.714.29l4.836-4.833 4.806 4.802a1.013 1.013 0 0 0 1.43-1.428l-4.786-4.751z"/>
     </symbol>
+    <symbol id="error" viewBox="0 0 32 32">
+      <path fill="none" stroke="#ff705d" style="stroke:var(--color1, #ff705d)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.285" d="M16 11.429v6.856m0 8a1.144 1.144 0 1 0-.003-2.286H16a1.144 1.144 0 0 0-.003 2.286H16z"/>
+      <path fill="none" stroke="#ff705d" style="stroke:var(--color1, #ff705d)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.285" d="M18.035 2.4a2.284 2.284 0 0 0-4.06-.012l-.006.013L1.396 27.542a2.285 2.285 0 0 0 2.034 3.314h25.144a2.285 2.285 0 0 0 2.028-3.325l.006.013L18.035 2.397z"/>
+    </symbol>
   </defs>
 </svg>

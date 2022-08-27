@@ -6,19 +6,19 @@
   margin-right: auto;
 
   // breakpoint 480px for mobile screen
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     width: $mobile;
   }
 
   // breakpoint 768px for tablet screen
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: $tablet;
     padding-right: 32px;
     padding-left: 32px;
   }
 
-  // breakpoint 1200px for desktop screen
-  @media screen and (min-width: 1200px) {
+  // breakpoint 1280px for desktop screen
+  @media screen and (min-width: $desktop) {
     width: $desktop;
     padding-right: 16px;
     padding-left: 16px;
