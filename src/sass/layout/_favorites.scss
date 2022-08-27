@@ -1,0 +1,22 @@
+.favorites {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.favorites__desc {
+    margin-bottom: 60px;
+}
+.favorites__link {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 282px;
+    padding: 17px;
+    border-radius: 139.658px;
+    border: 11px solid $color-yellow;
+
+        &:hover,
+        &:focus {
+    border: 11px solid $color-accent;
+        }
+}
