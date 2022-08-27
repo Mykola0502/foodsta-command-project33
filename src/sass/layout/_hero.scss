@@ -1,0 +1,142 @@
+ .hero__container {
+    background-color: #FFFFFF;
+ }
+ .hero__uppertitle {
+     font-family: Roboto;
+     font-style: normal;
+     color: #2C2C2C;
+ }
+
+ .hero__text {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 400;
+     color: #2C2C2C;
+ }
+
+ .hero__btn {
+     padding: 6px 18px;
+     background-color: #BBF330;
+     border-color: transparent;
+     border: none;
+ }
+
+  
+   
+ 
+
+@media screen and (max-width: 767.98px) {
+   
+   .hero { 
+    width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+   
+    padding-top: 60px;
+    padding-bottom: 50px; }
+   
+   .hero__uppertitle {
+    max-width: 280px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    
+   }
+
+   .hero__text {
+    
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    margin-bottom: 28px;
+   }
+   
+   .hero__img {
+    display: none;
+   }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__right-side {
+    position: absolute;
+    top: 149px;
+    right: 32px;
+        overflow: hidden;
+    width: 336px;
+    height: 320px;
+    border-radius: 50px;
+    border: 14px solid #FFE550;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    }
+.hero {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 60px;
+}
+.hero__uppertitle {
+    max-width: 537px;
+    font-size: 42px;
+    line-height: calc(50 / 42);
+    margin-bottom: 44px;
+} 
+.hero__text {
+    max-width: 336px;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+     padding-bottom: 40px;   
+}
+
+ }
+
+ @media screen and (min-width: 1280px) {
+   .hero {
+    width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    position: relative;
+    padding-top: 159px;
+   }
+   .hero__uppertitle {
+    max-width: 502px;
+    font-size: 48px;
+    line-height: calc(58 / 48);
+       margin-bottom: 28px; 
+   }
+   .hero__text {
+    max-width: 502px;
+    padding: 0;
+    font-size: 16px;
+        line-height: calc(24 / 16);
+        margin-bottom: 40px;
+       
+   }
+   .hero__right-side {
+      position: absolute;
+      top: 14px;
+      right: 30px;
+       overflow: hidden;
+       width: 608px;
+       height: 580px;
+       border-radius: 50px;
+       border: 26px solid #FFE550;
+       -moz-border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -khtml-border-radius: 50%;
+   }
+    
+ }
+
+
+
+
+
