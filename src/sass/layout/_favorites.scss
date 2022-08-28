@@ -25,9 +25,19 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 32px;
+        gap: $indent;
 }
-
+.favorites__item {
+    @include flex-basis(1);
+    
+        @media screen and (min-width: 768px) {
+            @include flex-basis(2);
+        }
+    
+        @media screen and (min-width: 1280px) {
+            @include flex-basis(3);
+        }
+}
 .favorites__link {
     @include centeredFlex(flex, center, center);
     width: 280px;
@@ -36,6 +46,7 @@
     background-color: $color-white;
     border-radius: 50%;
     border: 11px solid $color-yellow;
+    transition: border $timing-cubic;
 
         &:hover,
         &:focus {
@@ -56,8 +67,8 @@
         }
         
          @media screen and (min-width: $desktop) {
-            width: 394px;
-            height: 396px;
+            width: 393px;
+            height: 395px;
             padding: 23px;
             border: 16px solid $color-yellow;
 
@@ -70,7 +81,7 @@
    }
 
    .favorites__item--none {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         display: none;
 
     }
