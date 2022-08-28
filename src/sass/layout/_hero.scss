@@ -27,12 +27,8 @@
 
 @media screen and (max-width: 767.98px) {
    
-   .hero { 
-    width: 480px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: auto;
-        margin-right: auto;
+ .hero__container { 
+    
    
     padding-top: 60px;
     padding-bottom: 50px; }
@@ -60,11 +56,14 @@
 
 @media screen and (min-width: 768px) {
     .hero__right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 149px;
-    right: 32px;
+    right: 0;
         overflow: hidden;
-    width: 336px;
+    width: 320px;
     height: 320px;
     border-radius: 50px;
     border: 14px solid #FFE550;
@@ -72,12 +71,8 @@
     -webkit-border-radius: 50%;
     -khtml-border-radius: 50%;
     }
-.hero {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-left: auto;
-    margin-right: auto;
+.hero__container {
+    
     position: relative;
     padding-top: 60px;
 }
@@ -97,12 +92,8 @@
  }
 
  @media screen and (min-width: 1280px) {
-   .hero {
-    width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-left: auto;
-        margin-right: auto;
+   .hero__container {
+    
     position: relative;
     padding-top: 159px;
    }
@@ -121,9 +112,13 @@
        
    }
    .hero__right-side {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
       position: absolute;
       top: 14px;
-      right: 30px;
+      right: 0;
        overflow: hidden;
        width: 608px;
        height: 580px;
