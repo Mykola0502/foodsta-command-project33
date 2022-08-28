@@ -23,11 +23,13 @@
 
 .favorites__list {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: $indent;
+        
+        
 }
 .favorites__item {
+    @include centeredFlex(flex, center, center);
     @include flex-basis(1);
     
         @media screen and (min-width: 768px) {
@@ -67,8 +69,8 @@
         }
         
          @media screen and (min-width: $desktop) {
-            width: 393px;
-            height: 395px;
+            width: 394px;
+            height: 396px;
             padding: 23px;
             border: 16px solid $color-yellow;
 
