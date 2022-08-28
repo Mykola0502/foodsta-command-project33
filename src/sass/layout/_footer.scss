@@ -1,0 +1,49 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-block1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.footer__nav {
+  margin-left: auto;
+  margin-right: 100px;
+}
+.footer-subscribe {
+  width: 100%;
+}
+
+.footer-subscribe__title {
+  margin-bottom: 12px;
+}
+
+.footer-subscribe__input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-subscribe__field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.footer-subscribe__btn {
+  margin-bottom: 20px;
+}
+
+.footer-block2 {
+  text-align: center;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.footer__copyright-text {
+}
