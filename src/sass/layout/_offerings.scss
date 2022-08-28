@@ -1,11 +1,11 @@
  .offerings__title {
-    font-family: Roboto;
+    
     font-weight: 700;
     
  }
 
  .explanation__item-title {
-    font-family: Roboto;
+    
         
         font-weight: 700;
         font-size: 18px;
@@ -13,7 +13,7 @@
  }
 
  .offerings__text {
-    font-family: Roboto;
+    
         font-weight: 400;
         font-size: 16px;
         line-height: calc(19 / 16);
@@ -190,6 +190,10 @@ margin-bottom: 40px;
 
 @media screen and (min-width: 1280px) {
     .offerings__container {
+        display: flex;
+            padding-top: 177px;
+            align-items: center;
+            justify-content: space-between;
             padding-bottom: 100px;
            
             background-image: url(../images/offerings/backgrn@1x_lg.png);
@@ -207,13 +211,11 @@ margin-bottom: 40px;
         display: none;
        }
 
-       .offerings__container {
-        display: flex;
-        padding-top: 16px;
-        align-items: center;
-        justify-content: space-between;
-        
-       }
+       
+        .offerings__wrap-apple {
+          padding-top: 0;
+            margin-bottom: 0;
+        }
        
 
        .offerings__explanation {
