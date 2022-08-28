@@ -1,22 +1,77 @@
 .favorites {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 .favorites__desc {
+    @include fonts(14px, 16px, 400);
     margin-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        @include fonts(16px, 19px, 400);
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 40px;
+    }
+     
 }
+
+.favorites__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+}
+
 .favorites__link {
-display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex(flex, center, center);
     width: 280px;
     height: 282px;
     padding: 17px;
-    border-radius: 139.658px;
+    background-color: $color-white;
+    border-radius: 50%;
     border: 11px solid $color-yellow;
 
         &:hover,
         &:focus {
-    border: 11px solid $color-accent;
+            border: 11px solid $color-accent;
         }
-}
+
+        @media screen and (min-width: $tablet) {
+            width: 336px;
+            height: 338px;
+            padding: 19px;
+            border: 14px solid $color-yellow;
+
+            
+                &:hover,
+                &:focus {
+                    border: 14px solid $color-accent;
+                }
+        }
+        
+         @media screen and (min-width: $desktop) {
+            width: 394px;
+            height: 396px;
+            padding: 23px;
+            border: 16px solid $color-yellow;
+
+            
+                &:hover,
+                &:focus {
+                    border: 16px solid $color-accent;
+                }
+                }
+   }
+
+   .favorites__item--none {
+    @media screen and (max-width: 767px) {
+        display: none;
+
+    }
+   }
