@@ -1,43 +1,52 @@
 <header class="header">
-
-<div class="container header-container">
-    <a class="logo header__logo  link" href="./index.html">
-        <svg class="logo__svg" width="66" height="52">
-       <use  href="./images/icons.svg#logo"></use> 
-        </svg> 
- </a>
-<div class="menu-container " id="menu-container" data-menu >
-    <button class="menu-btn menu-btn__close" type="button" data-menu-close>
+  <div class="container header-container">
+    <a class="logo header__logo link" href="./index.html">
+      <svg class="logo__svg" width="66" height="52">
+        <use href="./images/icons.svg#logo"></use>
+      </svg>
+    </a>
+    <div class="menu-container" id="menu-container" data-menu>
+      <button class="menu-btn menu-btn__close" type="button" data-menu-close>
         <svg class="menu-btn__cross" width="24" height="24">
-            <use href="./images/icons.svg#cross"></use>
+          <use href="./images/icons.svg#cross"></use>
         </svg>
+      </button>
+      <nav class="nav">
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link link nav__link--current"
+              >Home</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#About" class="nav__link link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#service" class="nav__link link">Service</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#menu" class="nav__link link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#contact" class="nav__link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="header__btn btn" type="button" data-modal-open>
+      Order Now
     </button>
-<nav class="nav">
-    <ul class="list nav__list">
-        <li class="nav__item"><a href="./index.html" class="nav__link link  nav__link--current">Home</a></li>
-        <li class="nav__item"><a href="./index.html#About" class="nav__link link">About</a></li>
-        <li class="nav__item"><a href="./index.html#service" class="nav__link link">Service</a></li>
-        <li class="nav__item"><a href="./index.html#menu" class="nav__link link">Menu</a></li>
-        <li class="nav__item"><a href="./index.html#contact" class="nav__link link">Contact</a></li>
-            </ul>
-</nav>
 
-
-</div>
-<button class="header__btn btn" 
-type="button" data-modal-open> Order Now</button>
-
-<button class="menu-btn " 
-type="button" aria-expanded="false" aria-controls="menu-container" data-menu-open>
-<svg class="menu-btn__svg" width="28" height="28">
-    <use href="./images/icons.svg#menu"></use>
-</svg>
-
+    <button
+      class="menu-btn"
+      type="button"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-menu-open
+    >
+      <svg class="menu-btn__svg" width="28" height="28">
+        <use href="./images/icons.svg#menu"></use>
+      </svg>
     </button>
-
-
-    
-    
-
-</div>
+  </div>
 </header>
