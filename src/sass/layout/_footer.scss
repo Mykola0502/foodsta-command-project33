@@ -1,0 +1,121 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-block1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.footer__nav {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.footer-form {
+  margin-bottom: 20px;
+}
+
+.footer-subscribe {
+  width: 100%;
+}
+
+.footer-subscribe__title {
+  margin-bottom: 12px;
+}
+
+//Subscribe Form
+
+.subscription-form__field {
+  position: relative;
+  @media screen and (max-width: 767.98px) {
+    @include centeredFlex(flex, flex-end, center);
+
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.subscription-form__input {
+  width: 100%;
+  padding: 12px;
+
+  color: $color-text-primary;
+  @include fonts(12px, 18px, 400);
+
+  border: 1px solid #ffe550;
+  border-radius: 30px;
+  outline: transparent;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 22px;
+    max-width: 395px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 32px;
+  }
+
+  &::placeholder {
+    color: $color-form-placeholder;
+    @include fonts(12px, 18px, 400);
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border-color: $color-btn-border;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: $color-form-error;
+  }
+
+  &:focus-within {
+    border-color: $color-btn-border-hover;
+  }
+}
+
+.subscription-form__error {
+  position: absolute;
+  top: 48px;
+  left: 0;
+
+  @include centeredFlex();
+  display: none;
+  gap: 4px;
+  color: $color-form-error;
+  @include fonts(10px, 15px, 400);
+}
+
+.subscription-form__input:invalid:not(:placeholder-shown)
+  + .subscription-form__error {
+  display: block;
+}
+
+.subscription-form__btn {
+  padding: 11px 22px;
+  color: $color-text-primary;
+  background-color: $color-accent;
+  border-radius: 30px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover;
+  }
+}
+.footer-btn {
+background-color: $color-white;
+border: 0.854167px solid $color-btn-border;
+}
+
+.footer-block2 {
+  text-align: center;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}

@@ -1,63 +1,73 @@
 <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer-block1">
+      <a class="logo footer__logo link" href="./index.html">
+        <svg class="logo__svg" width="66" height="52">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </a>
 
-    <div class="container footer__container">
-        <div class="footer-block1">
-            <a class="logo footer__logo link" href="./index.html">
-                <svg class="logo__svg" width="66" height="52">
-                    <use href="./images/icons.svg#logo"></use>
-                </svg>
-            </a>
+      <nav class="nav footer__nav">
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#About" class="nav__link link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#service" class="nav__link link">Service</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#menu" class="nav__link link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#contact" class="nav__link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-            <nav class="nav">
-                <ul class="list nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./index.html#About" class="nav__link link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./index.html#service" class="nav__link link">Service</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./index.html#menu" class="nav__link link">Menu</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./index.html#contact" class="nav__link link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="footer-subscribe">
+        <h3 class="footer-subscribe__title">Subscribe</h3>
 
-            <div class="footer-subscribe">
-                <h3 class="footer-subscribe__title">Subscribe</h3>
-                    
-                <form class="footer-subscribe__form" name="subscription">
-                <div class="footer-subscribe__field">
-                    <input
-                    class="footer-subscribe__input"
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    />
-                    <button class="btn footer-subscribe__btn" type="submit">
-                    Subscribe
-                    </button>
-                </div>
-                </form>
-                <p class="footer-subscribe__text">
-                    By subscribing you agree to with our <a class="footer-subscribe__policy link" href="">Privacy Policy.</a>
-                </p>
-            </div>        
-        </div>
-
-        <div class="footer-block2">
-            <ul class="footer__list list">
-                <li class="footer__item"><a href="" class="link">Privacy Policy</a></li>
-                <li class="footer__item"><a href="" class="link">Terms of Service</a></li>
-                <li class="footer__item"><a href="" class="link">Cookies Settings</a></li>
-            </ul>
-            <p class="footer__copyright-text">2022 FoodSta. All right reserved.</p>
-        </div>
+        <form class="subscription-form footer-form" name="subscription">
+          <div class="subscription-form__field">
+            <input
+              class="subscription-form__input"
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+            <span class="subscription-form__error">
+              <svg class="icon-error" width="12" height="12">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+              Not a valid email address (example@email.com)
+            </span>
+            <button class="btn subscription-form__btn footer-btn" type="submit">
+              Subscribe
+            </button>
+          </div>
+        </form>
+        <p class="footer-subscribe__text">
+          By subscribing you agree to with our
+          <a class="footer-subscribe__policy link" href="">Privacy Policy.</a>
+        </p>
+      </div>
     </div>
 
+    <div class="footer-block2">
+      <ul class="footer__list list">
+        <li class="footer__item"><a href="" class="link">Privacy Policy</a></li>
+        <li class="footer__item">
+          <a href="" class="link">Terms of Service</a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="link">Cookies Settings</a>
+        </li>
+      </ul>
+      <p class="footer__copyright-text">2022 FoodSta. All right reserved.</p>
+    </div>
+  </div>
 </footer>
