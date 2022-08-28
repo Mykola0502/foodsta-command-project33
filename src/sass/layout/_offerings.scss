@@ -190,6 +190,10 @@ margin-bottom: 40px;
 
 @media screen and (min-width: 1280px) {
     .offerings__container {
+        display: flex;
+            padding-top: 177px;
+            align-items: center;
+            justify-content: space-between;
             padding-bottom: 100px;
            
             background-image: url(../images/offerings/backgrn@1x_lg.png);
@@ -207,13 +211,11 @@ margin-bottom: 40px;
         display: none;
        }
 
-       .offerings__container {
-        display: flex;
-        padding-top: 16px;
-        align-items: center;
-        justify-content: space-between;
-        
-       }
+       
+        .offerings__wrap-apple {
+          padding-top: 0;
+            margin-bottom: 0;
+        }
        
 
        .offerings__explanation {
