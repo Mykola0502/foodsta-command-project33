@@ -26,36 +26,34 @@
         <label class="modal-form__label">
           
             <span class="modal-form__text">Gamburger</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="1" max="100" value="1"/>
+            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0"/>
         </label>
-
         
-
         <label class="modal-form__label">
         
             <span class="modal-form__text">Pasta</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="1" max="100" value="1" />
+            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
         </label>
         <label class="modal-form__label">
         
             <span class="modal-form__text">Pizza</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="1" max="100" value="1" />
+            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
         </label>
         <label class="modal-form__label">
         
             <span class="modal-form__text">Chicken</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="1" max="100" value="1" />
+            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
         </label>
         <label class="modal-form__label">
         
             <span class="modal-form__text">Salat</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="1" max="100" value="1" />
+            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
         </label>
 
         <label class="modal-form__label">
         
             <span class="modal-form__text">Borsch</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="1" max="100" value="1" />
+            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
         </label>
 
         <button class="header__btn btn" type="submit"> Order Now</button>
