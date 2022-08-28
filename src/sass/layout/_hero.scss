@@ -51,6 +51,11 @@
   padding: 6px 18px;
   background-color: #bbf330;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover;
+  }
 }
 
 .hero__right-side {
