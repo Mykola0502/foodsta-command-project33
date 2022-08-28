@@ -9,20 +9,69 @@
       </p>
       <button class="btn hero__btn" type="button">Order Now</button>
     </div>
+
     <div class="hero__right-side">
-      <img
-        srcset="
-          ./images/hero/slider1@1x_md.png  292w,
-          ./images/hero/slider1@2x_md.png  584w,
-          ./images/hero/slider1@1x_lg.png  528w,
-          ./images/hero/slider1@2x_lg.png 1056w
-        "
-        sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
-        class="hero__img img"
-        width="292"
-        src="./images/hero/slider1@1x_lg.png"
-        alt="food on a plate"
-      />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide customer-item">
+            <img
+              srcset="
+                ./images/hero/slider1@1x_md.png  292w,
+                ./images/hero/slider1@2x_md.png  584w,
+                ./images/hero/slider1@1x_lg.png  528w,
+                ./images/hero/slider1@2x_lg.png 1056w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+              class="hero__img img"
+              width="292"
+              src="./images/hero/slider1@1x_lg.png"
+              alt="food on a plate"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/hero/slider2@1x_md.png  292w,
+                ./images/hero/slider2@2x_md.png  584w,
+                ./images/hero/slider2@1x_lg.png  528w,
+                ./images/hero/slider2@2x_lg.png 1056w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+              class="hero__img img"
+              width="292"
+              src="./images/hero/slider1@1x_lg.png"
+              alt="food on a plate"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/hero/slider3@1x_md.png  292w,
+                ./images/hero/slider3@2x_md.png  584w,
+                ./images/hero/slider3@1x_lg.png  528w,
+                ./images/hero/slider3@2x_lg.png 1056w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+              class="hero__img img"
+              width="292"
+              src="./images/hero/slider1@1x_lg.png"
+              alt="food on a plate"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <button class="swiper-btn swiper-btn-left" type="button">
+            <svg class="swiper-up" width="48" height="40">
+              <use href="./images/icons.svg#arrow-up"></use>
+            </svg>
+          </button>
+          <button class="swiper-btn swiper-btn-right" type="button">
+            <svg class="swiper-up" width="48" height="40">
+              <use href="./images/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
