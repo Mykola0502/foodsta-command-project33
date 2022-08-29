@@ -43,8 +43,8 @@
         url(../images/footer/img-4@2x-md.png),
         url(../images/footer/img-5@2x-md.png),
         url(../images/footer/img-6@2x-md.png),
-        url(../images/footer/img-7@2x-md.png),
-        url(../images/footer/img-8@2x-md.png);
+        url(../images/footer/img-8@2x-md.png),
+        url(../images/footer/img-7@2x-md.png);
       background-size: 184px, 168px, 193px, 221px, 141px, 170px, 203px, 96px;
     }
   }
@@ -77,12 +77,18 @@
   }
 }
 
+
 .footer-block1 {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
 
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
 }
 
@@ -116,6 +122,10 @@
 
 .footer-form {
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
 }
 
 .footer-subscribe {
@@ -235,6 +245,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -246,6 +257,7 @@
   @media screen and (min-width: $tablet) {
     gap: 20px;
     display: flex;
+    margin-bottom: 0;
   }
 }
 
