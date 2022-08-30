@@ -20,22 +20,18 @@
             height="309"
           />
         </div>
-        <ul class="list hidden-list">
-          <li class="hidden-item apple-md">
-            <img
-              class="hidden-apple"
-              src="./images/offerings/apple_md.png"
-              alt="medium green apple"
-            />
-          </li>
-          <li class="hidden-item apple-sm">
-            <img
-              class="hidden-apple"
-              src="./images/offerings/apple_sm.png"
-              alt="small green apple"
-            />
-          </li>
-        </ul>
+        <div class="hidden-list">
+          <img
+            class="hidden-apple"
+            src="./images/offerings/apple_md.png"
+            alt="medium green apple"
+          />
+          <img
+            class="hidden-apple"
+            src="./images/offerings/apple_sm.png"
+            alt="small green apple"
+          />
+        </div>
       </div>
     </div>
     <div class="offerings__explanation">
@@ -47,39 +43,44 @@
       </p>
       <ul class="offerings__explanation-list list">
         <li class="explanation__item">
-          <div class="wrap-icon">
-            <svg class="explanation__icon" width="32" height="32">
-              <use href="/./src/images/icons.svg#rocket"></use>
-            </svg>
-          </div>
-          <h3 class="explanation__item-title">Fasest Delivery</h3>
+          <h3 class="explanation__item-title fasest-title">Fasest Delivery</h3>
           <p class="explanation__item-text offerings__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros.
           </p>
         </li>
         <li class="explanation__item">
-          <div class="wrap-icon">
-            <svg class="explanation__icon" width="32" height="32">
-              <use href="/./src/images/icons.svg#touch"></use>
-            </svg>
-          </div>
-          <h3 class="explanation__item-title">Easy To Order</h3>
+          <h3 class="explanation__item-title easy-title">Easy To Order</h3>
           <p class="explanation__item-text offerings__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros.
           </p>
         </li>
       </ul>
-      <button class="explanation__btn btn" type="button" data-modal-open>
-        Order Now
-      </button>
-      <button class="more__btn bnt" type="button">
-        Read More
-        <svg class="more-icon" width="13.67" height="13.67">
-          <use href="/./src/images/icons.svg#icon-Chevron-Down"></use>
-        </svg>
-      </button>
+      <div class="buttons">
+        <button class="explanation__btn btn" type="button" data-modal-open>
+          Order Now
+        </button>
+        <div class="more-text">
+          <input type="checkbox" id="read-more" hidden />
+          <label for="read-more" class="read-more"
+            >Read
+            <span class="more"
+              >more
+              <svg class="more-icon" width="13.67" height="13.67">
+                <use
+                  href="/./src/images/icons.svg#icon-Chevron-Down"
+                ></use></svg></span
+            ><span class="less">less</span></label
+          >
+          <p class="extra-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed
+            nihil provident corporis cum numquam accusamus. Dignissimos, dolores
+            vitae voluptate, quam, neque provident impedit suscipit molestiae
+            facilis dolorum fugit deleniti.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

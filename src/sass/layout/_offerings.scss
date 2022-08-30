@@ -3,6 +3,9 @@
   }
 
   .explanation__item-title {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 8px;
       font-weight: 700;
       font-size: 18px;
       line-height: calc(21 / 18);
@@ -18,20 +21,27 @@
       font-size: 14px;
       line-height: calc(21 / 14);
   }
-
-  .wrap-icon {
-      object-fit: cover;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: #ffffff;
-      margin-bottom: 8px;
-  }
-
-  .explanation__btn {
+   .fasest-title::before {
+         content: url(../images/rocket_launch.svg);
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         background-color: #ffffff;
+         border-radius: 50%;
+        width: 48px;
+            height: 48px;
+        }
+   .easy-title::before {
+        content: url(../images/touch_app.svg);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+           }
+   .explanation__btn {
       padding: 10px 22px;
       background-color: #FFFFFF;
       border-color: transparent;
@@ -42,21 +52,55 @@
       &:focus {
           border-color: #597D00;
       }
-  }
-
-  .more__btn {
-      display: inline-flex;
-      align-items: center;
-      margin-left: 24px;
-      background-color: inherit;
-      border: none;
-      padding-top: 7px;
-      padding-bottom: 7px;
-  }
-
-  .more-icon {
+    }
+   .more-icon {
       margin-left: 3.42px;
-  }
+      }
+    .buttons {
+    display: flex;
+    align-items: flex-start;
+    align-items: baseline;
+       }
+     .more-text {
+    max-width: 480px;
+    margin-left: 24px;
+    cursor: pointer;
+        }
+     .read-more {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    color: #000000;
+           }
+    .more {
+    display: inline-flex;
+    align-items: center;
+       }
+    .extra-text {
+    display: none;
+      }
+   #read-more:checked~.extra-text {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 9px;
+    font-weight: 800;
+    
+      }
+
+     .less {
+    display: none;
+       }
+
+     #read-more:checked~.read-more .more {
+    display: none;
+        }
+
+    #read-more:checked~.read-more .less {
+    display: inline;
+    margin-right: 25px;
+    font-size: 16px;
+    border-bottom: 3px solid #597D00;
+        }
+   
 
   @media screen and (max-width: 767.98px) {
       .offerings__container {
@@ -96,10 +140,14 @@
           margin-bottom: 16px;
       }
 
-      .hidden-list {
+        .more-text {
+        width: 130px;
+        }
+        .hidden-list {
           display: none;
       }
-  }
+
+      }
 
 
   @media screen and (min-width: 768px) {
@@ -144,7 +192,7 @@
       }
 
       .offerings__title {
-          width: 526px;
+          max-width: 526px;
           margin-bottom: 20px;
           font-weight: 700;
           font-size: 42px;
@@ -152,7 +200,7 @@
       }
 
       .offerings__text-main {
-          width: 526px;
+          max-width: 526px;
           margin-bottom: 40px;
       }
 
@@ -163,7 +211,7 @@
       }
 
       .explanation__item {
-          width: 252px;
+          max-width: 252px;
       }
 
       .explanation__item-title {
@@ -173,27 +221,28 @@
 
 
   @media screen and (min-width: 1280px) {
-      .offerings__container {
+      
+    .offerings__container {
           display: flex;
-          padding-top: 177px;
-          align-items: center;
+         align-items: center;
           justify-content: space-between;
-          padding-bottom: 70px;
+        padding-top: 177px;
+            padding-bottom: 70px;
+          
+      background-image: url(../images/offerings/backgrn@1x_lg.png);
 
-          background-image: url(../images/offerings/backgrn@1x_lg.png);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/offerings/backgrn@2x_lg.png);
+         }
 
-          @media (min-device-pixel-ratio: 2),
-          (-webkit-min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-              background-image: url(../images/offerings/backgrn@2x_lg.png);
-          }
-
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-      }
-
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+        }       
+    
       .hidden-list {
           display: none;
       }
@@ -212,7 +261,9 @@
           margin-bottom: 32px;
       }
 
-      .more__btn {
-          display: none;
+      .more-text {
+        display: none;
       }
   }
+
+  
