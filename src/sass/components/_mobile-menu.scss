@@ -26,6 +26,8 @@
 
 .menu-btn__svg {
   fill: $color-btn-border;
+  transition: fill $timing-cubic;
+
   .menu-btn:hover &,
   .menu-btn:focus & {
     fill: currentColor;
@@ -33,27 +35,13 @@
 }
 
 .menu-btn__close {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    z-index: 50;
-
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 50;
 }
-// .menu-btn .menu-btn__cross {
-//     display: none;
-// }
-
-// .menu-btn.is-open .menu-btn__cross {
-//     display: block;
-// }
-
-// .menu-btn.is-open .menu-btn__menu {
-//     display: none;
-// }
 
 .menu-container {
- 
-
   &.is-open {
     // display: block;
     display: flex;
