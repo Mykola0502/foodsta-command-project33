@@ -1,5 +1,45 @@
 .customers {
-  /* padding-bottom: 60px; */
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% /* 100% */;
+
+  /* Добавила падинг */
+  padding-top: 60px;
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 100%;
+    background-image: url(../images/customers/rectangle701@1x_sm.svg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangle701@2x_sm.svg);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 100%;
+    background-image: url(../images/customers/rectangle706@1x_md.svg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangle706@2x_md.svg);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1920px;
+    background-image: url(../images/customers/rectangle706@1x_lg.svg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangle706@2x_lg.svg);
+    }
+  }
 }
 .customers-title {
   font-family: Roboto;
@@ -10,6 +50,7 @@
   margin-bottom: 2px;
 }
 .customers__response-title {
+  font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
 }
@@ -31,16 +72,17 @@
 
 @media screen and (max-width: 767.98px) {
   .customers__container {
-    padding-top: 60px;
+    /* виправила, бо не потрібен padding-top: 60px; */
     padding-bottom: 60px;
 
-    background-image: url(../images/customers/rectangle701@1x_sm.png);
+    /*  Виправлено Альоною  */
+    /* background-image: url(../images/customers/rectangle701@1x_sm.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/customers/rectangle701@2x_sm.png);
-    }
+    } */
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,7 +100,7 @@
     font-size: 16px;
     line-height: calc(19 / 16);
     color: #2c2c2c;
-    padding: 28px 8px 40px;
+    margin: 28px 8px 40px;
   }
 
   .customers__uppertitle {
@@ -74,6 +116,7 @@
   }
   .customers__list {
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
@@ -84,11 +127,11 @@
   display: flex;
   width: 160px;
   height: 52px;
-  margin-left: 28px;
+  padding-left: 8px;
+  border-right: 1px solid #7eb101;
 }
 .customers__revievs-boy {
   width: 48px;
-  margin-right: 16px;
 }
 .customers__item {
   width: 440px;
@@ -131,21 +174,21 @@
     height: 554px;
     /* background-image: url(../images/customers/rectangle701@1x_sm.png); */
 
-    background-image: url(../images/customers/rectangle719@1x_md.png);
+    /*  background-image: url(../images/customers/rectangle719@1x_md.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/customers/rectangle719@2x_md.png);
-    }
+    } */
 
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .customers-title {
-    width: 526px;
-    padding-top: 60px;
+    max-width: 526px;
+    /* Иаправлено Аленой  padding-top: 60px; */
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 42px;
@@ -163,18 +206,13 @@
     font-size: 18px;
     line-height: calc(21 / 18);
     color: #2c2c2c;
-    padding: 28px 8px 40px;
+    margin: 28px 12px 40px;
   }
 
   .customers__item {
     width: 336px;
   }
 
-  .customers__response-title {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(21 / 14);
-  }
   .customers__list {
     display: flex;
     flex-wrap: wrap;
@@ -201,13 +239,15 @@
     .customers__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: left;
       gap: 139px;
     }
 
     .customers__item {
       width: 500px;
-      padding-bottom: 200px;
+    }
+    .customers__text {
+      margin: 28px 14px 40px;
     }
   }
 }
