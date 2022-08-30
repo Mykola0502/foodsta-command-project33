@@ -3,12 +3,19 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-right: 28px;
   }
 }
 
 .nav__item {
   @media screen and (min-width: 768px) {
     margin-right: 28px;
+  }
+}
+
+.nav__item:last-child {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
   }
 }
 
@@ -20,6 +27,9 @@
   line-height: 1.19;
 
   padding: 16px;
+
+  transition: color $timing-cubic;
+  transition: background-color $timing-cubic;
 
   &:hover,
   &:focus {
