@@ -50,33 +50,18 @@
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url(../images/footer/img-1@1x-lg.png),
-      url(../images/footer/img-2@1x-lg.png),
-      url(../images/footer/img-3@1x-lg.png),
-      url(../images/footer/img-5@1x-lg.png),
-      url(../images/footer/img-4@1x-lg.png),
-      url(../images/footer/img-6@1x-lg.png),
-      url(../images/footer/img-7@1x-lg.png),
-      url(../images/footer/img-8@1x-lg.png);
-    background-position: 53px 100%, 216px 100%, 280px 100%, center bottom,
-      center bottom, right 282px bottom, right 134px bottom, right 16px bottom;
+    background-image: url(../images/footer/img-1@1x-lg.png);
+      
+    background-position: center bottom;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/img-1@2x-lg.png),
-        url(../images/footer/img-2@2x-lg.png),
-        url(../images/footer/img-3@2x-lg.png),
-        url(../images/footer/img-5@2x-lg.png),
-        url(../images/footer/img-4@2x-lg.png),
-        url(../images/footer/img-6@2x-lg.png),
-        url(../images/footer/img-7@2x-lg.png),
-        url(../images/footer/img-8@2x-lg.png);
-      background-size: 195px, 178px, 163px, 526px, 380px, 235px, 154px, 181px;
+      background-image: url(../images/footer/img-1@2x-lg.png);        
+      background-size: 1211px;
     }
   }
 }
-
 
 .footer-block1 {
   margin-bottom: 60px;
@@ -94,13 +79,10 @@
 
 .block1-wrap {
   display: flex;
-  justify-content: space-between;
-  margin-right: 100px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $desktop) {
-    justify-content: start;
-    margin: 0;
+    align-items: center;
   }
 }
 
@@ -110,29 +92,49 @@
   }
 }
 
-.footer__nav {
+.footer-nav {
+  margin-left: auto;
+  margin-right: 101px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+  }
 }
 
-.footer-nav__link {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.footer-form {
+.footer-nav__item:not(:last-child) {
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 12px;
+    margin-bottom: 0;
+    margin-right: 28px;
   }
 }
 
-.footer-subscribe {
+.footer-nav__link {
+  padding: 10px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: $color-black;
+
   @media screen and (min-width: $tablet) {
-    min-width: 411px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
+
+.footer-form {
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    max-width: 399px;
+    flex-wrap: wrap;
+  }
+}
+
 
 .footer-subscribe__title {
   margin-bottom: 12px;
@@ -146,19 +148,10 @@
 
 //Subscribe Form
 
-.footer-form__field {
-  position: relative;
-  @media screen and (max-width: 767.98px) {
-    @include centeredFlex(flex, flex-end, center);
-
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
 .footer-form__input {
   width: 100%;
   padding: 12px;
+  margin-bottom: 20px;
 
   color: $color-text-primary;
   @include fonts(12px, 18px, 400);
@@ -212,26 +205,46 @@
 
 .footer-form__btn {
   padding: 11px 22px;
+  margin-bottom: 20px;
   color: $color-text-primary;
-  background-color: $color-accent;
+  background-color: $color-white;
+  border: 0.854167px solid $color-btn-border;
   border-radius: 30px;
-  border: none;
+
+  margin-left: auto;
+  display: block;
 
   &:hover,
   &:focus {
     background-color: $color-btn-hover;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    display: inline-block;;
+  }
 }
-.footer-btn {
-  background-color: $color-white;
-  border: 0.854167px solid $color-btn-border;
-}
+
 
 .footer-subscribe__text {
   font-size: 10px;
   line-height: calc(12 / 10);
 
   color: $color-text-primary;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+}
+
+.footer__link-policy {
+  padding: 10px 10px 10px 0;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  text-decoration-line: underline;
+
+  color: $color-btn-border;
 
   @media screen and (min-width: $tablet) {
     font-size: 12px;
@@ -251,17 +264,20 @@
 
 .footer__list {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
-    gap: 20px;
     display: flex;
     margin-bottom: 0;
   }
 }
 
 .footer__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   font-size: 10px;
   line-height: calc(12 / 10);
   text-decoration-line: underline;
