@@ -51,13 +51,13 @@
 
   @media screen and (min-width: $desktop) {
     background-image: url(../images/footer/img-1@1x-lg.png);
-      
+
     background-position: center bottom;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/img-1@2x-lg.png);        
+      background-image: url(../images/footer/img-1@2x-lg.png);
       background-size: 1211px;
     }
   }
@@ -130,6 +130,8 @@
   }
 }
 
+//Subscribe Form
+
 .footer-form {
   position: relative;
 
@@ -140,7 +142,6 @@
   }
 }
 
-
 .footer-subscribe__title {
   margin-bottom: 12px;
 
@@ -150,8 +151,6 @@
 
   color: $color-text-primary;
 }
-
-//Subscribe Form
 
 .footer-form__input {
   width: 100%;
@@ -205,7 +204,7 @@
 }
 
 .footer-form__input:invalid:not(:placeholder-shown) + .footer-form__error {
-  display: block;
+  display: flex;
 }
 
 .footer-form__btn {
@@ -226,10 +225,9 @@
 
   @media screen and (min-width: $tablet) {
     margin-left: 0;
-    display: inline-block;;
+    display: inline-block;
   }
 }
-
 
 .footer-subscribe__text {
   font-size: 10px;

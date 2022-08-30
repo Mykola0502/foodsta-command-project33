@@ -1,6 +1,6 @@
 <section class="section subscribe">
   <div class="container subscribe__container">
-    <div class="subscribe__img">
+    <!-- <div class="subscribe__img">
       <img
         srcset="
           ./images/subscribe/subscribe-img-161.png   161w,
@@ -16,7 +16,23 @@
         width="161"
         height="78"
       />
-    </div>
+    </div> -->
+    <img
+      class="subscribe__img"
+      srcset="
+        ./images/subscribe/subscribe-img-161.png   161w,
+        ./images/subscribe/subscribe-img-281.png   281w,
+        ./images/subscribe/subscribe-img-322.png   322w,
+        ./images/subscribe/subscribe-img-546.png   546w,
+        ./images/subscribe/subscribe-img-562.png   562w,
+        ./images/subscribe/subscribe-img-1092.png 1092w
+      "
+      sizes="(min-width: 1280px) 546px, (min-width: 768px) 281px, 161px"
+      src="./images/subscribe/subscribe-img-161.png"
+      alt="Banana"
+      width="161"
+      height="78"
+    />
     <div class="subscribe__description">
       <h2 class="section__title">Subscribe To Get Special Offers</h2>
       <p class="subscribe__text">
@@ -25,7 +41,23 @@
       </p>
 
       <form class="subscription-form" name="subscription">
-        <div class="subscription-form__field">
+        <input
+          class="subscription-form__input"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+        <span class="subscription-form__error">
+          <svg class="icon-error" width="12" height="12">
+            <use href="./images/icons.svg#error"></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </span>
+        <button class="btn subscription-form__btn" type="submit">
+          Subscribe
+        </button>
+        <!-- <div class="subscription-form__field">
           <input
             class="subscription-form__input"
             type="email"
@@ -42,7 +74,7 @@
           <button class="btn subscription-form__btn" type="submit">
             Subscribe
           </button>
-        </div>
+        </div> -->
       </form>
     </div>
   </div>

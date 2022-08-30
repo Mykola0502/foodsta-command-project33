@@ -1,3 +1,13 @@
+.hero {
+  @media screen and (min-width: 768px) {
+    margin-bottom: -108px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: -161px;
+  }
+}
+
 .hero__container {
   padding-top: 60px;
   padding-bottom: 50px;
@@ -5,12 +15,12 @@
   z-index: 2;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: -108px;
+    // margin-bottom: -108px;
     padding-bottom: 73px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: -161px;
+    // margin-bottom: -161px;
     padding-top: 159px;
     padding-bottom: 164px;
   }
@@ -127,4 +137,8 @@
   @media screen and (min-width: 1280px) {
     right: -40px;
   }
+}
+
+.swiper-wrapper {
+  user-select: none;
 }
