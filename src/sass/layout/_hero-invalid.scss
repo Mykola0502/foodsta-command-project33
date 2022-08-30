@@ -1,12 +1,11 @@
 .hero__container {
   padding-top: 60px;
   padding-bottom: 50px;
-  position: relative;
-  z-index: 2;
 
   @media screen and (min-width: 768px) {
     margin-bottom: -108px;
     padding-bottom: 73px;
+    position: relative;
   }
 
   @media screen and (min-width: 1280px) {
@@ -52,7 +51,6 @@
   padding: 6px 18px;
   background-color: #bbf330;
   border: none;
-  transition: background-color $timing-cubic;
 
   &:hover,
   &:focus {
@@ -70,6 +68,7 @@
     position: absolute;
     right: 40px;
     bottom: 0;
+    overflow: hidden;
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -85,46 +84,60 @@
   }
 }
 
-.slider-btn {
-  padding-top: 3px;
-  width: 34px;
-  height: 28px;
-  position: absolute;
-  top: 50%;
-  fill: $color-text-primary;
-  border-radius: 4px;
+// .hero__img {
+//   @media screen and (max-width: 767.98px) {
+//     display: none;
+//   }
+// }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  border-radius: unset;
+  width: 30px;
+  height: 30px;
+}
+.swiper-btn {
+  width: 48px;
+  height: 40px;
+  display: inline-flex;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
   background-color: $background-white;
+  border: none;
+  border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  transition: fill $timing-cubic;
-
-  @media screen and (min-width: 1280px) {
-    width: 48px;
-    height: 40px;
-    border-radius: 8px;
-  }
-
-  &:hover,
-  &:focus {
-    fill: $color-btn-border;
-  }
-
-  &:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-  }
-}
-
-.slider-left {
-  left: -22px;
-
-  @media screen and (min-width: 1280px) {
-    left: -40px;
-  }
-}
-
-.slider-right {
-  right: -22px;
-
-  @media screen and (min-width: 1280px) {
-    right: -40px;
-  }
 }

@@ -12,19 +12,10 @@
       </button>
     </div>
 
-    <!-- Slider main container -->
     <div class="hero__right-side">
-      <svg class="swiper-button-prev slider-btn slider-left">
-        <use href="./images/icons.svg#arrow-up"></use>
-      </svg>
-      <svg class="swiper-button-next slider-btn slider-right">
-        <use href="./images/icons.svg#arrow-down"></use>
-      </svg>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
+          <div class="swiper-slide customer-item">
             <img
               srcset="
                 ./images/hero/slider1@1x_md.png  292w,
@@ -70,15 +61,18 @@
             />
           </div>
         </div>
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-pagination">
+          <button class="swiper-btn swiper-btn-left" type="button">
+            <svg class="swiper-up" width="48" height="40">
+              <use href="./images/icons.svg#arrow-up"></use>
+            </svg>
+          </button>
+          <button class="swiper-btn swiper-btn-right" type="button">
+            <svg class="swiper-up" width="48" height="40">
+              <use href="./images/icons.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
