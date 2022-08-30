@@ -1,67 +1,131 @@
- <div class="backdrop is-hidden" data-modal >
-    <div class="modal">
-      <button class="modal__btn" data-modal-close>
-        <svg class="modal__icon" width="24" height="24">
-          <use href="./images/icons.svg#cross"></use>
-        </svg>
-      </button>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" data-modal-close>
+      <svg class="modal__icon" width="24" height="24">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
 
-      <div class="modal__pictures">
-        <ul class="list modal__pictures-list">
-            <li  class="modal__pictures-item"><img class="modal__pictures-img" src="./images/favorites/gamburger@1x_sm.png" alt="gamburger" /></li>
-            <li class="modal__pictures-item"><img class="modal__pictures-img" src="./images/favorites/pasta@1x_sm.png" alt="pasta" /></li>
-            <li class="modal__pictures-item"><img class="modal__pictures-img" src="./images/favorites/pizza@1x_sm.png" alt="pizza" /></li>
-            <li class="modal__pictures-item"><img class="modal__pictures-img" src="./images/favorites/chicken@1x_md.png" alt="chicken" /></li>
-            <li class="modal__pictures-item"><img class="modal__pictures-img" src="./images/favorites/salat@1x_md.png" alt="salat" /></li>
-            <li class="modal__pictures-item"><img class="modal__pictures-img" src="./images/favorites/borshch@1x_md.png" alt="borshch" /></li>
-        </ul>
-
-       
-          
-       
-      </div>
-      <form name="order-form" class="order-form" >
-        <strong class="order-form__title">create your order</strong>
-        
-        <label class="modal-form__label">
-          
-            <span class="modal-form__text">Gamburger</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0"/>
-        </label>
-        
-        <label class="modal-form__label">
-        
-            <span class="modal-form__text">Pasta</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
-        </label>
-        <label class="modal-form__label">
-        
-            <span class="modal-form__text">Pizza</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
-        </label>
-        <label class="modal-form__label">
-        
-            <span class="modal-form__text">Chicken</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
-        </label>
-        <label class="modal-form__label">
-        
-            <span class="modal-form__text">Salat</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
-        </label>
-
-        <label class="modal-form__label">
-        
-            <span class="modal-form__text">Borsch</span>
-            <input class=" modal-form__input" type="number" name="gamburger" min="0" max="100" value="0" />
-        </label>
-
-        <button class="header__btn btn" type="submit"> Order Now</button>
-        <button class="header__btn btn" type="reset">Reset</button>
-
-
-
-
-      </form>
+    <div class="modal__pictures">
+      <ul class="list modal__pictures-list">
+        <li class="modal__pictures-item">
+          <img
+            class="modal__pictures-img"
+            src="./images/favorites/gamburger@1x_sm.png"
+            alt="gamburger"
+          />
+        </li>
+        <li class="modal__pictures-item">
+          <img
+            class="modal__pictures-img"
+            src="./images/favorites/pasta@1x_sm.png"
+            alt="pasta"
+          />
+        </li>
+        <li class="modal__pictures-item">
+          <img
+            class="modal__pictures-img"
+            src="./images/favorites/pizza@1x_sm.png"
+            alt="pizza"
+          />
+        </li>
+        <li class="modal__pictures-item">
+          <img
+            class="modal__pictures-img"
+            src="./images/favorites/chicken@1x_md.png"
+            alt="chicken"
+          />
+        </li>
+        <li class="modal__pictures-item">
+          <img
+            class="modal__pictures-img"
+            src="./images/favorites/salat@1x_md.png"
+            alt="salat"
+          />
+        </li>
+        <li class="modal__pictures-item">
+          <img
+            class="modal__pictures-img"
+            src="./images/favorites/borshch@1x_md.png"
+            alt="borshch"
+          />
+        </li>
+      </ul>
     </div>
- </div>
+    <form name="order-form" class="order-form">
+      <strong class="order-form__title">create your order</strong>
+
+      <label class="modal-form__label">
+        <span class="modal-form__text">Gamburger</span>
+        <input
+          class="modal-form__input"
+          type="number"
+          name="gamburger"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__text">Pasta</span>
+        <input
+          class="modal-form__input"
+          type="number"
+          name="gamburger"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </label>
+      <label class="modal-form__label">
+        <span class="modal-form__text">Pizza</span>
+        <input
+          class="modal-form__input"
+          type="number"
+          name="gamburger"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </label>
+      <label class="modal-form__label">
+        <span class="modal-form__text">Chicken</span>
+        <input
+          class="modal-form__input"
+          type="number"
+          name="gamburger"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </label>
+      <label class="modal-form__label">
+        <span class="modal-form__text">Salat</span>
+        <input
+          class="modal-form__input"
+          type="number"
+          name="gamburger"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </label>
+
+      <label class="modal-form__label">
+        <span class="modal-form__text">Borsch</span>
+        <input
+          class="modal-form__input"
+          type="number"
+          name="gamburger"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </label>
+
+      <button class="header__btn btn" type="submit">Order Now</button>
+      <button class="header__btn btn" type="reset">Reset</button>
+    </form>
+  </div>
+</div>

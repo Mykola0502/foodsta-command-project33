@@ -1,51 +1,44 @@
 .nav__list {
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .nav__item {
-
-    @media screen and (min-width: 768px) {
-        margin-right: 28px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-right: 28px;
+  }
 }
 
 .nav__link {
-    display: block;
+  display: block;
 
-    color: $color-black;
-    font-size: 16px;
-    line-height: 1.19;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 1.19;
 
-    padding: 16px;
+  padding: 16px;
 
-    &:hover,
-    &:focus {
-
-        background-color: $color-accent;
-
-        @media screen and (min-width: 768px) {
-            background-color: transparent;
-            color: $color-accent;
-            text-decoration: underline;
-        }
-
-    }
-
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
 
     @media screen and (min-width: 768px) {
-        padding: 16px 0;
-        font-size: 14px;
-        color: $color-black;
+      background-color: transparent;
+      color: $color-accent;
+      text-decoration: underline;
     }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
+    padding: 16px 0;
+    font-size: 14px;
+    color: $color-black;
+  }
 
-        color: $color-text-primary;
-    }
+  @media screen and (min-width: 1280px) {
+    color: $color-text-primary;
+  }
 }
-
