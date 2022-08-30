@@ -119,6 +119,11 @@
   line-height: calc(16 / 14);
   color: $color-black;
 
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
   @media screen and (min-width: $tablet) {
     padding-left: 0;
     padding-right: 0;
