@@ -46,15 +46,14 @@
   .customers {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (max-width: 767.98px) {
-      max-width: 100%;
-      background-image: url(../images/customers/rectangle701@1x_sm.svg);
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/customers/rectangle701@2x_sm.svg);
-      }
+    max-width: 100%;
+    background-image: url(../images/customers/rectangle701@1x_sm.svg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangle701@2x_sm.svg);
     }
   }
   .customers-title {
@@ -92,15 +91,13 @@
     padding-top: 60px;
     padding-bottom: 120px;
 
-    @media screen and (min-width: $tablet) {
-      max-width: 100%;
-      background-image: url(../images/customers/rectangle706@1x_md.svg);
+    max-width: 100%;
+    background-image: url(../images/customers/rectangle706@1x_md.svg);
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/customers/rectangle706@2x_md.svg);
-      }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangle706@2x_md.svg);
     }
 
     .customers-title {
@@ -144,15 +141,13 @@
     padding-top: 100px;
     padding-bottom: 200px;
 
-    @media screen and (min-width: $desktop) {
-      max-width: 1920px;
-      background-image: url(../images/customers/rectangle706@1x_lg.svg);
+    max-width: 1920px;
+    background-image: url(../images/customers/rectangle706@1x_lg.svg);
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/customers/rectangle706@2x_lg.svg);
-      }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangle706@2x_lg.svg);
     }
   }
   .customers__uppertitle {
