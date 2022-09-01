@@ -1,29 +1,22 @@
 .hero {
-  @media screen and (min-width: 768px) {
-    margin-bottom: -108px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: -161px;
-  }
-}
-
-.hero__container {
   padding-top: 60px;
   padding-bottom: 50px;
-  position: relative;
-  z-index: 2;
 
   @media screen and (min-width: 768px) {
-    // margin-bottom: -108px;
+    margin-bottom: -108px;
     padding-bottom: 73px;
   }
 
   @media screen and (min-width: 1280px) {
-    // margin-bottom: -161px;
+    margin-bottom: -161px;
     padding-top: 159px;
     padding-bottom: 164px;
   }
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
 }
 .hero__uppertitle {
   max-width: 280px;
@@ -79,7 +72,7 @@
     @include centeredFlex();
     position: absolute;
     right: 40px;
-    bottom: 0;
+    bottom: -73px;
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -88,7 +81,7 @@
 
   @media screen and (min-width: 1280px) {
     right: 30px;
-    bottom: 14px;
+    bottom: -150px;
     width: 580px;
     height: 580px;
     border: 26px solid #ffe550;
